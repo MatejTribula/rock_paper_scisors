@@ -1,11 +1,16 @@
-console.log("cau svet")
+const playerSelection = 'rock'.toLowerCase()
 
 
+playGame()
 
+function playGame() {
 
+    for (let i = 0; i < 5; i++) {
+        const computerSelection = getComputerChoice().toLowerCase()
+        console.log(round(playerSelection, computerSelection))
+    }
 
-const playerSelection = 'rock'
-const computerSelection = getComputerChoice()
+}
 
 function round(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
