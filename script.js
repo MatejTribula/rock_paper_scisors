@@ -35,3 +35,5 @@ function getComputerChoice() {
         return "scissors"
     }
 }
+
+//test
